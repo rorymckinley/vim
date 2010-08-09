@@ -105,5 +105,7 @@ imap <up> <nop>
 set fileencoding=utf-8
 set fileencodings=utf-8,latin1
 
+" Status bar
+set laststatus=2
 "set foldmethod=indent
 "let ruby_fold=1
