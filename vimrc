@@ -25,7 +25,7 @@ call pathogen#runtime_append_all_bundles()
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-"set background=dark
+set background=dark
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -89,6 +89,8 @@ runtime! macros/matchit.vim
 "autocmd!
 "autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 "augroup END
+
+set tabpagemax=20
 
 " Disable arrow keys
 map <down> <nop>
