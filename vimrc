@@ -52,11 +52,11 @@ set showmatch		" Show matching brackets.
 "set hidden             " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes) in terminals
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smarttab
 set expandtab
-set softtabstop=4
+set softtabstop=2
 set autoindent
 "set hlsearch
 set incsearch
@@ -111,3 +111,5 @@ set fileencodings=utf-8,latin1
 set laststatus=2
 "set foldmethod=indent
 "let ruby_fold=1
+"
+colorscheme ir_black
