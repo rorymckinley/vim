@@ -79,7 +79,7 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 
 set nocompatible
-syntax on
+"syntax on
 filetype plugin indent on
 "set mouse=a
 
@@ -111,3 +111,17 @@ set fileencodings=utf-8,latin1
 set laststatus=2
 "set foldmethod=indent
 "let ruby_fold=1
+"
+
+if $COLORTERM == 'gnome-terminal'
+    set term=gnome-256color
+    colorscheme railscasts
+else
+    colorscheme default
+endif
+colorscheme railscasts
+" if &diff
+"     colorscheme vividchalk
+" else
+"     colorscheme solarized
+" endif
