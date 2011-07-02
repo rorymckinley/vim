@@ -113,10 +113,5 @@ set laststatus=2
 "let ruby_fold=1
 "
 
-if $COLORTERM == 'gnome-terminal'
-    set term=gnome-256color
-    colorscheme railscasts
-else
-    colorscheme default
-endif
-
+set term=xterm-256color
+colorscheme railscasts
