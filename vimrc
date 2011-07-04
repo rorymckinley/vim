@@ -52,11 +52,11 @@ set showmatch		" Show matching brackets.
 "set hidden             " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes) in terminals
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smarttab
 set expandtab
-set softtabstop=4
+set softtabstop=2
 set autoindent
 "set hlsearch
 set incsearch
@@ -112,10 +112,5 @@ set laststatus=2
 "set foldmethod=indent
 "let ruby_fold=1
 "
-
-if $COLORTERM == 'gnome-terminal'
-    set term=gnome-256color
-    colorscheme railscasts
-else
-    colorscheme default
-endif
+set term=xterm-256color
+colorscheme railscasts
