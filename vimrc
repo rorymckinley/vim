@@ -119,9 +119,3 @@ if $COLORTERM == 'gnome-terminal'
 else
     colorscheme default
 endif
-colorscheme railscasts
-" if &diff
-"     colorscheme vividchalk
-" else
-"     colorscheme solarized
-" endif
