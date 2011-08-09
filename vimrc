@@ -110,9 +110,6 @@ set fileencodings=utf-8,latin1
 " Status bar
 set laststatus=2
 set statusline=%{fugitive#statusline()}
-"set foldmethod=indent
-"let ruby_fold=1
-"
 
 set term=xterm-256color
 colorscheme railscasts
