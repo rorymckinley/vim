@@ -109,8 +109,8 @@ set fileencodings=utf-8,latin1
 
 " Status bar
 set laststatus=2
-"set foldmethod=indent
-"let ruby_fold=1
-"
+set statusline=%{fugitive#statusline()}
+
 set term=xterm-256color
 colorscheme railscasts
+" colorscheme jellybeans
