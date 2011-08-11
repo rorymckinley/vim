@@ -109,7 +109,7 @@ set fileencodings=utf-8,latin1
 
 " Status bar
 set laststatus=2
-set statusline=%{fugitive#statusline()}
+set statusline=%{fugitive#statusline()}%=[%f][%c][%P]
 
 set term=xterm-256color
 colorscheme railscasts
