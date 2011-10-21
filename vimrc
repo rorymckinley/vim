@@ -7,8 +7,8 @@ syntax on
 
 set background=dark
 
+set colorcolumn=133
 set showmatch		" Show matching brackets.
-
 set tabstop=2
 set shiftwidth=2
 set smarttab
@@ -16,7 +16,8 @@ set expandtab
 set softtabstop=2
 set autoindent
 set incsearch
-set number
+set nohlsearch
+set relativenumber
 set hidden
 
 if has("autocmd")
@@ -28,21 +29,10 @@ if has("autocmd")
     au BufNewFile *.rb set softtabstop=2
 endif
     
-" Source a global configuration file if available
-" XXX Deprecated, please move your changes here in /etc/vim/vimrc
-if filereadable("/etc/vim/vimrc.local")
-  source /etc/vim/vimrc.local
-endif
-
 set nocompatible
 filetype plugin indent on
 
 runtime! macros/matchit.vim
-
-"augroup myfiletypes
-"autocmd!
-"autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
-"augroup END
 
 set tabpagemax=20
 
