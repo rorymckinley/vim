@@ -46,3 +46,6 @@
 [submodule "bundle/vim-symbols-strings"]
 	path = bundle/vim-symbols-strings
 	url = git://github.com/rorymckinley/vim-symbols-strings.git
+[submodule "bundle/tcomment_vim"]
+	path = bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim
