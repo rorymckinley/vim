@@ -53,7 +53,7 @@ set fileencodings=utf-8,latin1
 
 " Status bar
 set laststatus=2
-set statusline=%{fugitive#statusline()}%=[%f][%c][%P]
+set statusline=%{fugitive#statusline()}%=[%f][%c][%l]
 
 " Get the word motion operator to handle Ruby instance variables
 set iskeyword=@,48-57,_,192-255,@-@
