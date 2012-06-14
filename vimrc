@@ -55,5 +55,16 @@ set fileencodings=utf-8,latin1
 set laststatus=2
 set statusline=%{fugitive#statusline()}%=[%f][%c][%l]
 
+" Get the word motion operator to handle Ruby instance variables
+set iskeyword=@,48-57,_,192-255,@-@
+
+" Wrap a word in hash-curlies
+nnoremap <Leader>zz :call HashCurlies()<CR>
+
+" Ruby stuffz
+let ruby_operators = 1
+let ruby_space_errors = 1
+let ruby_fold = 1
+
 set term=xterm-256color
 colorscheme railscasts
