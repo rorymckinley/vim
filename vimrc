@@ -53,8 +53,7 @@ set fileencodings=utf-8,latin1
 
 " Status bar
 set laststatus=2
-set statusline=%{fugitive#statusline()}%=[%f][%c][%P]
+set statusline=%{fugitive#statusline()}%=[%f][%c][%l]
 
 set term=xterm-256color
 colorscheme railscasts
-" colorscheme jellybeans
