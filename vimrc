@@ -7,7 +7,10 @@ syntax on
 
 set background=dark
 
-set colorcolumn=133
+if exists("colorcolumn")
+  set colorcolumn=133
+endif
+
 set showmatch		" Show matching brackets.
 set tabstop=2
 set shiftwidth=2
@@ -17,7 +20,11 @@ set softtabstop=2
 set autoindent
 set incsearch
 set nohlsearch
-set relativenumber
+
+if exists("&relativenumber")
+  set relativenumber
+endif
+
 set hidden
 
 if has("autocmd")
