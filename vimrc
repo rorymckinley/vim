@@ -7,9 +7,9 @@ syntax on
 
 set background=dark
 
-if exists("colorcolumn")
+"if exists("colorcolumn")
   set colorcolumn=133
-endif
+"endif
 
 set showmatch		" Show matching brackets.
 set tabstop=2
@@ -21,9 +21,9 @@ set autoindent
 set incsearch
 set nohlsearch
 
-if exists("&relativenumber")
+"if exists("&relativenumber")
   set relativenumber
-endif
+"endif
 
 set hidden
 
@@ -71,7 +71,6 @@ nnoremap <Leader>zz :call HashCurlies()<CR>
 " Ruby stuffz
 let ruby_operators = 1
 let ruby_space_errors = 1
-let ruby_fold = 1
 
 set term=xterm-256color
-colorscheme railscasts
+colorscheme jellybeans
