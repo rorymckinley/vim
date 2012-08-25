@@ -1,45 +1,36 @@
-runtime! debian.vim
-
+" Pathogen
+filetype off 
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
-filetype off 
+filetype plugin indent on
+
+" Syntax highlighting
 syntax on
-
 set background=dark
+set term=xterm-256color
+colorscheme jellybeans
 
-"if exists("colorcolumn")
-  set colorcolumn=133
-"endif
+" Visual cues
+set colorcolumn=133
+set relativenumber
+set showmatch
 
-set showmatch		" Show matching brackets.
+" Indentation
 set tabstop=2
 set shiftwidth=2
 set smarttab
 set expandtab
 set softtabstop=2
 set autoindent
+
+" Searching
 set incsearch
 set nohlsearch
 
-"if exists("&relativenumber")
-  set relativenumber
-"endif
-
+" Do not abandon 'off' buffers
 set hidden
 
-if has("autocmd")
-    au BufRead *.rb set tabstop=2
-    au BufRead *.rb set shiftwidth=2
-    au BufRead *.rb set softtabstop=2
-    au BufNewFile *.rb set tabstop=2
-    au BufNewFile *.rb set shiftwidth=2
-    au BufNewFile *.rb set softtabstop=2
-endif
-    
 set nocompatible
-filetype plugin indent on
-
-runtime! macros/matchit.vim
 
 set tabpagemax=20
 
@@ -71,6 +62,3 @@ nnoremap <Leader>zz :call HashCurlies()<CR>
 " Ruby stuffz
 let ruby_operators = 1
 let ruby_space_errors = 1
-
-set term=xterm-256color
-colorscheme jellybeans
