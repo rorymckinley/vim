@@ -4,6 +4,8 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+let mapleader=" "
+
 " Syntax highlighting
 syntax on
 set background=dark
@@ -24,8 +26,13 @@ set softtabstop=2
 set autoindent
 
 " Searching
+nnoremap / /\v
+vnoremap / /\v
 set incsearch
-set nohlsearch
+set hlsearch
+set ignorecase
+set smartcase
+nnoremap <leader>h :noh<cr>
 
 " Do not abandon 'off' buffers
 set hidden
@@ -45,6 +52,8 @@ imap <left> <nop>
 imap <right> <nop>
 imap <up> <nop> 
 
+set backspace=indent,eol,start
+
 " Filetypes
 set fileencoding=utf-8
 set fileencodings=utf-8,latin1
@@ -62,3 +71,9 @@ nnoremap <Leader>zz :call HashCurlies()<CR>
 " Ruby stuffz
 let ruby_operators = 1
 let ruby_space_errors = 1
+
+" Modelines
+set modelines=0
+set nomodeline
+
+set ttyfast
