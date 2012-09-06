@@ -76,4 +76,6 @@ let ruby_space_errors = 1
 set modelines=0
 set nomodeline
 
+set switchbuf=usetab,newtab
+
 set ttyfast
