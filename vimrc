@@ -68,6 +68,8 @@ set iskeyword=@,48-57,_,192-255,@-@
 " Wrap a word in hash-curlies
 nnoremap <Leader>zz :call HashCurlies()<CR>
 
+nnoremap <Leader>t :CtrlP<CR>
+
 " Ruby stuffz
 let ruby_operators = 1
 let ruby_space_errors = 1
